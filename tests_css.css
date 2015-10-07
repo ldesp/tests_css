@@ -1,0 +1,121 @@
+/*
+tests_css.css
+---------
+*/
+body
+{
+background-color:rgba(128,128,128,0.5);
+color:black;
+}
+nav,#contenu
+{
+display:inline-block;
+vertical-align:top;
+}
+nav
+{
+width:10%;
+background-color:orange;
+position:fixed;
+top:0;
+left:0;
+}
+#contenu
+{
+width:89%;
+min-width:300px;
+position:relative;
+top:0;
+left:10%;
+}
+h1
+{
+color:green;
+opacity:0.7;
+border: 3px solid maroon;
+border-radius: 10px;
+box-shadow:6px 6px 0px black;
+text-shadow:3px 3px 3px yellow;
+}
+#section_mc
+{
+font-size:x-small;
+text-align:justify;
+-moz-column-count:3;
+-webkit-column-count:3;
+column-count:3;
+-moz-column-width:200px;
+-webkit-column-width:200px;
+column-width:200px;
+-moz-column-gap:20px;
+-webkit-column-gap:20px;
+column-gap:20px;
+-moz-column-rule:2px solid red;
+-webkit-column-rule:2px solid red;
+column-rule:auto;
+-moz-hyphens:auto;
+-webkit-hyphens:auto;
+hyphens:auto;
+
+}
+#section_mc h1
+{
+-moz-column-span:all;
+-webkit-column-span:all;
+column-span:all;
+}
+#section_mc #saut
+{
+-moz-column-span:all;
+-webkit-column-break-before:always;
+break-before:column;
+}
+#section_mc h1
+{
+-moz-column-span:all;
+-webkit-column-span:all;
+column-span:all;
+}
+#prem_d
+{
+height:100px;
+background: linear-gradient(to right, red, orange, yellow, green, blue);
+}
+#seco_d
+{
+height:100px;
+background: radial-gradient(red, yellow, rgb(30, 144, 255));
+}
+#prem_anim {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+#prem_anim {
+	-webkit-animation: changeColor 4s infinite ease-in-out;
+	animation: changeColor 4s infinite ease-in-out;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes changeColor {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes changeColor {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+	
+			
+
+
+
+	
+
+
+
+
